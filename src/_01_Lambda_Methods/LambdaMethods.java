@@ -13,7 +13,12 @@ public class LambdaMethods {
 		}, "repeat");
 		
 		//2. Call the printCustonMessage method using a lambda so that the String prints backwards.
-		
+		printCustomMessage((s)->{
+			String z=new String();
+			for(int j=0; j<s.length(); j++) {
+				z.charAt(j)=s.charAt(s.length()-j);
+			}
+		}, "hello my good rat star");
 		//3. Call the printCustonMessage method using a lambda so that the String prints with a mix between upper an lower case characters.
 		
 		//4. Call the printCustonMessage method using a lambda so that the String prints with a period in between each character.
